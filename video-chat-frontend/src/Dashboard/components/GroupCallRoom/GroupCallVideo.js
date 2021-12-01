@@ -26,14 +26,12 @@ const GroupCallVideo = ({ stream, index, videoRendered, setVideoRendered }) => {
   }, [stream]);
 
   return (
-    <div style={styles.videoContainer}>
-      <video
-        id={`${stream.id}`}
-        ref={videoRef}
-        autoPlay
-        style={styles.videoElement}
-      />
-    </div>
+    <video
+      id={`${stream.id}`}
+      ref={videoRef}
+      autoPlay
+      style={{ display: "none" }}
+    />
   );
 };
 

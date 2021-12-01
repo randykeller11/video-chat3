@@ -91,11 +91,7 @@ function GroupCallCanvas({
         <Canvas camera={{ position: [0, 4, 6] }}>
           <Suspense fallback={<Loader />}>
             <Pyramidion scale={[1, 1, 1]} position={[0, 0, 10]} />
-            <Avatar5
-              videoElement={document.getElementById("userVideo")}
-              store={avatarStore}
-              userID={provider.doc.guid}
-            />
+            <Avatar5 store={avatarStore} userID={provider.doc.guid} />
             {
               videoRendered.length === groupCallStreams.length &&
                 otherUsers &&

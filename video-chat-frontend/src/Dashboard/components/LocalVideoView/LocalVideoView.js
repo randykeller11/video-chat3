@@ -33,7 +33,13 @@ const LocalVideoView = (props) => {
   return (
     <video
       id="userVideo"
-      style={{ display: "none" }}
+      style={{
+        position: "absolute",
+        "z-index": "1",
+        height: "22.5vh",
+        right: "0vw",
+        bottom: "0vh",
+      }}
       ref={localVideoRef}
       autoPlay
       muted

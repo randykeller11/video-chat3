@@ -8,7 +8,6 @@ import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
 import useKeyPress from "../hooks/useKeyPress";
-import WebCamScreen from "./WebCamScreen";
 
 export default function Model(_state, { ...props }) {
   const group = useRef();
@@ -93,7 +92,6 @@ export default function Model(_state, { ...props }) {
   });
   return (
     <group ref={group} {...props} dispose={null}>
-      <WebCamScreen videoElement={_state.videoElement} />
       <primitive object={nodes.Hips} />
       <skinnedMesh
         geometry={nodes.EyeLeft.geometry}
