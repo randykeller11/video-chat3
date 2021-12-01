@@ -1,0 +1,11 @@
+.gui {
+  position: absolute;
+  z-index: 2;
+  right: 5vw;
+  top: 5vh;
+  height: 30vh;
+  width: 20vw;
+  display: flex;
+  border-radius: 30px;
+  background-color: rgba(148, 168, 198, 0.85);
+}
